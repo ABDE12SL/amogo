@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(17, 2, 71);
+}
+
+header {
+    padding: 20px 0;
+}
+
+nav {
+    display: flex; /* جعل الشعار والروابط في سطر واحد */
+    justify-content: space-between; /* الشعار على اليسار والروابط على اليمين */
+    align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+    width: 70%; /* نفس العرض المستخدم في container */
+    max-width: 1280px; /* نفس الحد الأقصى للعرض */
+    margin: 0 auto; /* توسيط nav */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white; /* اللون الأبيض للشعار */
+}
+
+.hamburger {
+    display: none; /* إخفاء الزر افتراضيًا */
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+span {
+    color: brown;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; /* جعل الروابط في سطر واحد */
+    gap: 60px; /* المسافة بين الروابط */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white; /* اللون الأبيض للروابط */
+    font-size: 16px;
+    transition:  0.3s;
+}
+
+.nav-links li a:hover {
+    color: #5603c4;
+}
+
+.sect1 h3 {
+    color: white;
+    display: flex;
+    margin-left: 200px;
+    padding-top: 100px;
+    font-size: 90px;
+}
+
+.sect1 p {
+    color: rgb(116, 115, 115);
+    font-size: 19px;
+    margin-left: 200px;
+    white-space: pre-wrap;
+    justify-content: center;
+}
+
+.sect1 button {
+    background-color: #a52a2a;
+    height: 50px;
+    width: 150px;
+    margin-left: 200px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    border: 2px ;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: 0.3s ease;
+}
+
+.sect1 button:hover{
+    color: white;
+    background: transparent;
+    border: solid ;
+    border-color: #5603c4;
+}
+
+.border {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px 5px;
+    padding: 20px;
+    margin-left: 200px;
+    justify-content:center;
+}
+
+.sect2 h6{
+    color: white;
+    margin-left: 200px;
+    padding-top: 300px;
+    font-size: 20px;
+}
+
+.sect2 h1 {
+    color: #a52a2a;
+    font-size: 50px;
+    margin-left: 200px;
+}
+
+.sect2 span {
+    text-decoration: underline;
+}
+
+
+.sect2 .border .b1 {
+    width: 200px;
+   height: 160px;
+    background-color: rgb(20, 2, 85);
+    margin-top: 50px;
+    border-radius: 2px;
+}
+
+.sect2 .border .b1 i {
+    color: #a52a2a;
+    align-items: center;
+    font-size: 30px; 
+    margin-left: 10px;
+    margin-top:30px ;
+}
+
+.b1 h4{
+    color: white;
+    font-size: 14px;
+    text-align: left;
+    margin-top:20px ;
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+
+.b1 p {
+    color: rgb(211, 207, 207);
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 70px;
+    margin-left: 10px;
+}
+
+.sect2 .border .b1:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.418), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.sect3{
+    height: 300px;
+}
+.sect3 h1{
+    color: #a52a2a;
+    font-size: 50px;
+    padding-bottom: 20px;
+    margin-left: 200px;
+}
+
+.sect3 input {
+    width: 280px;
+    height: 40px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    background-color: rgb(20, 2, 85);
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #fff; 
+    font-size: 16px;
+}
+
+.sect3 button {
+    background-color: #a52a2a;
+    height: 50px;
+    width: 140px;
+    margin-left: 500px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    border: 2px ;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: 0.3s ease;
+}
+
+.sect3 button:hover{
+    color: white;
+    background: transparent;
+    border: solid ;
+    border-color: #5603c4;
+}
+
+footer{
+background: var(--dark-color);
+padding: 20px 0;
+text-align: center;
+color: white;
+background-color:  rgb(20, 2, 85);
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* شاشات صغيرة (مثل الهواتف) */
+@media (max-width: 600px) {
+    .hamburger {
+        display: block; /* إظهار زر الهامبرغر */
+      }
+    .nav-links{
+    display: none; /* إخفاء القائمة افتراضيًا */
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background-color: #19022c63;
+    position: absolute;
+    top: 60px; /* لتجنب التداخل مع الزر */
+    left: 150px;
+    }
+    .nav-links.active{
+        display: flex;
+    }
+    .nav-links li a {
+        margin: 10px 0;
+    }
+    .sect1 h3 {
+        font-size: 50px;
+        margin-left: 60px;
+    }
+    .sect1 p {
+        font-size: 10px;
+        margin-left: 60px;
+    }
+    .sect1 button {
+        height: 30px;
+        width: 100px;
+        font-size: 10px;
+    }
+    .sect2 {
+        grid-template-columns: 1fr;
+    }
+    .sect2 h6{
+        font-size: 10px;
+        margin-left: 60px;
+    }
+    .sect2 h1{
+        font-size: 30px;
+        margin-left: 60px;
+    }
+    .border{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .sect2 .border .b1{
+        margin-left: -159px;
+        width: 300px;
+   height: 160px;
+    }
+    .sect3 h1 {
+        font-size: 30px;
+        margin-left: 60px;
+    }
+    .sect3 input {
+        margin-left: 60px;
+        width: 200px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .sect3 button {
+        margin-left: 240px;
+        height: 30px;
+        width: 100px;
+        font-size: 10px;
+    }
+  }
+  
+  /* شاشات متوسطة (مثل الأجهزة اللوحية) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .hamburger {
+        display: block; /* إظهار زر الهامبرغر */
+      }
+    .nav-links{
+    display: none; /* إخفاء القائمة افتراضيًا */
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background-color: #19022c63;
+    position: absolute;
+    top: 60px; /* لتجنب التداخل مع الزر */
+    left: 255px;
+    }
+    .nav-links.active{
+        display: flex;
+    }
+    .nav-links li a {
+        margin: 10px 0;
+    }
+    .sect1 h3 {
+        font-size: 60px;
+        margin-left: 110px;
+    }
+    .sect1 p {
+        font-size: 15px;
+        margin-left: 110px;
+    }
+    .sect1 button {
+        height: 40px;
+        width: 150px;
+        font-size: 16px;
+        margin-left: 400px;
+    }
+    .sect2 h6{
+        font-size: 16px;
+        margin-left: 110px;
+    }
+    .sect2 h1{
+        font-size: 40px;
+        margin-left: 110px;
+    }
+    .border{
+     grid-template-columns: repeat(2, 1fr);
+     gap: 20px;
+    }
+    .sect2 .border .b1{
+        margin-left: -110px;
+        width: 250px;
+        height: 160px;
+    }
+    .sect3 h1 {
+        font-size: 40px;
+        margin-left: 110px;
+    }
+    .sect3 input {
+        margin-left: 110px;
+        width: 300px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .sect3 button {
+        margin-left: 300px;
+        height: 40px;
+        width: 110px;
+        font-size: 12px;
+    }
+  }
